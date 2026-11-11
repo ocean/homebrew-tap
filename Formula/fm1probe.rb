@@ -11,14 +11,12 @@ class Fm1probe < Formula
 
   def install
     system "swift", "build", "--disable-sandbox", "--configuration", "release", "--product", "fm1probe"
-    # FM1Rescue finds its flash loaders in this bundle, next to the binary.
-    libexec.install ".build/release/fm1probe", ".build/release/FM1Kit_FM1Rescue.bundle"
-    bin.install_symlink libexec/"fm1probe"
+    bin.install ".build/release/fm1probe"
   end
 
   test do
     assert_match "fm1probe", shell_output("#{bin}/fm1probe --version")
-    # A backup of a simulated FM-1 in download mode loads the bundled flash loaders and talks to no device.
+    # A backup of a simulated FM-1 in download mode uses the built-in flash loader and talks to no device.
     system bin/"fm1probe", "flash-backup", testpath/"backup", "--simulated"
     assert_predicate testpath/"backup", :directory?
   end
