@@ -1,10 +1,10 @@
 class Fm1probe < Formula
   desc "Inspect, check, monitor, simulate and update M-VAVE FM-1 synthesisers"
   homepage "https://github.com/ocean/FM1Kit"
+  url "https://github.com/ocean/FM1Kit/archive/refs/tags/0.7.0.tar.gz"
+  sha256 "94a5ff2ffb5920a23c144d2673e32995e8193ea046bbf99ce6bcb50ef74787a3"
   license "MIT"
   head "https://github.com/ocean/FM1Kit.git", branch: "main"
-
-  # The stable url and sha256 arrive with the first FM1Kit release that has `fm1probe --version`.
 
   depends_on xcode: ["16.3", :build]
   depends_on macos: :sonoma

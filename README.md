@@ -14,4 +14,5 @@ brew install ocean/tap/fm1probe
 fm1probe --version
 ```
 
-It's built from source, so it needs Xcode 16.3 or later, and macOS 14 or later.
+It needs macOS 14 or later. On Apple silicon Macs with macOS 15 or later, Homebrew installs a
+ready-built bottle; elsewhere it builds from source, which needs Xcode 16.3 or later.
