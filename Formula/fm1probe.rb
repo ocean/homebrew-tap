@@ -6,6 +6,12 @@ class Fm1probe < Formula
   license "MIT"
   head "https://github.com/ocean/FM1Kit.git", branch: "main"
 
+  bottle do
+    root_url "https://ghcr.io/v2/ocean/tap"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "a44e5997ce68c2235c21ba90df1c2cc4d2579df26183134fa4cb378ad8a4f4b1"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "31974e407be9a9de4da58a41cf0a3549ce8c38dc700bb5f79c5ffab62788d1e1"
+  end
+
   depends_on xcode: ["16.3", :build]
   depends_on macos: :sonoma
 
