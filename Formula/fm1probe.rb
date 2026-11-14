@@ -1,8 +1,8 @@
 class Fm1probe < Formula
   desc "Inspect, check, monitor, simulate and update M-VAVE FM-1 synthesisers"
   homepage "https://github.com/ocean/FM1Kit"
-  url "https://github.com/ocean/FM1Kit/archive/refs/tags/0.7.0.tar.gz"
-  sha256 "94a5ff2ffb5920a23c144d2673e32995e8193ea046bbf99ce6bcb50ef74787a3"
+  url "https://github.com/ocean/FM1Kit/archive/refs/tags/0.7.1.tar.gz"
+  sha256 "6e9239624e1ad8f7ce906ef0ed6b80df6685d29d46f14e5c6c639c6c3086d7eb"
   license "MIT"
   head "https://github.com/ocean/FM1Kit.git", branch: "main"
 
