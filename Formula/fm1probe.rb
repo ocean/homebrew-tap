@@ -8,8 +8,8 @@ class Fm1probe < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/ocean/tap"
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "4bfa40c14a338b05f0641692bac2cf7e76a1a96ba8f1ec8c48952fbeccc40994"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "5e17361ca667bdf870229258d52c608a598fc881e821928281f87715d8752d52"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:   "8d4db283068cb3f9dc81c61e91160ac9457a9d2bbd971eb8adefe5d9758993b2"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e6acf563d2540fea077e0e9a273da6600cdccdac627aeb8d3cb2672599f6f3d6"
   end
 
   depends_on xcode: ["16.3", :build]
